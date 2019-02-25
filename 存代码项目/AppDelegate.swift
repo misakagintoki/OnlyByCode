@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //获取当前的屏幕尺寸
+        let screen = UIScreen.main.bounds
+        //给输出窗口进行实例化，并且设置frame
+        self.window = UIWindow.init(frame:screen)
+        //实例化一个初始画面（MainViewController）
+        let viewController = MainViewController()
+        //(如果需要)为MainViewController设置导航栏
+        let navigationController = UINavigationController(rootViewController: viewController)
+        //将导航栏设置到输出窗口上
+        self.window?.rootViewController = navigationController
+        //设置输出窗口可访问
+        self.window?.makeKeyAndVisible()
         return true
     }
 

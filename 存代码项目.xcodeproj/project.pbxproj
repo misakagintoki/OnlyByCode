@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE02A26E2222791B00554DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02A26D2222791B00554DAE /* AppDelegate.swift */; };
-		CE02A2702222791B00554DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02A26F2222791B00554DAE /* ViewController.swift */; };
-		CE02A2732222791B00554DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02A2712222791B00554DAE /* Main.storyboard */; };
 		CE02A2752222791D00554DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE02A2742222791D00554DAE /* Assets.xcassets */; };
 		CE02A2782222791D00554DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE02A2762222791D00554DAE /* LaunchScreen.storyboard */; };
+		CE02A2802222794800554DAE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02A27F2222794800554DAE /* MainViewController.swift */; };
+		CE02A2822222802C00554DAE /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02A2812222802C00554DAE /* StudentTableViewCell.swift */; };
+		CE02A28522228A3100554DAE /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02A28322228A3100554DAE /* NewTableViewCell.swift */; };
+		CE02A28622228A3100554DAE /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE02A28422228A3100554DAE /* NewTableViewCell.xib */; };
+		CE02A28822228D6E00554DAE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02A28722228D6E00554DAE /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE02A26A2222791B00554DAE /* 存代码项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "存代码项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE02A26D2222791B00554DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE02A26F2222791B00554DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE02A2722222791B00554DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE02A2742222791D00554DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE02A2772222791D00554DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE02A2792222791D00554DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE02A27F2222794800554DAE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE02A2812222802C00554DAE /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		CE02A28322228A3100554DAE /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
+		CE02A28422228A3100554DAE /* NewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTableViewCell.xib; sourceTree = "<group>"; };
+		CE02A28722228D6E00554DAE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				CE02A26D2222791B00554DAE /* AppDelegate.swift */,
-				CE02A26F2222791B00554DAE /* ViewController.swift */,
-				CE02A2712222791B00554DAE /* Main.storyboard */,
 				CE02A2742222791D00554DAE /* Assets.xcassets */,
 				CE02A2762222791D00554DAE /* LaunchScreen.storyboard */,
 				CE02A2792222791D00554DAE /* Info.plist */,
+				CE02A27F2222794800554DAE /* MainViewController.swift */,
+				CE02A2812222802C00554DAE /* StudentTableViewCell.swift */,
+				CE02A28322228A3100554DAE /* NewTableViewCell.swift */,
+				CE02A28422228A3100554DAE /* NewTableViewCell.xib */,
+				CE02A28722228D6E00554DAE /* SecondViewController.swift */,
 			);
 			path = "存代码项目";
 			sourceTree = "<group>";
@@ -124,7 +133,7 @@
 			files = (
 				CE02A2782222791D00554DAE /* LaunchScreen.storyboard in Resources */,
 				CE02A2752222791D00554DAE /* Assets.xcassets in Resources */,
-				CE02A2732222791B00554DAE /* Main.storyboard in Resources */,
+				CE02A28622228A3100554DAE /* NewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +144,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE02A2702222791B00554DAE /* ViewController.swift in Sources */,
 				CE02A26E2222791B00554DAE /* AppDelegate.swift in Sources */,
+				CE02A2802222794800554DAE /* MainViewController.swift in Sources */,
+				CE02A28522228A3100554DAE /* NewTableViewCell.swift in Sources */,
+				CE02A28822228D6E00554DAE /* SecondViewController.swift in Sources */,
+				CE02A2822222802C00554DAE /* StudentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE02A2712222791B00554DAE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE02A2722222791B00554DAE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE02A2762222791D00554DAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
